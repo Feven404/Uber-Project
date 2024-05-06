@@ -28,7 +28,7 @@ Combined all the data and made the following changes regarding the Date/Time col
 4. Created a new column extracting only the weekdays from the Date/Time column and displaying it as words like Monday, Tuesday, etc.
 5. Created a new column extracting only the day in numeric value from the Date/Time column
 
-<img src="Images/changing the datetime column.png", height = 500, width = 450>
+<img src="Images/changing the datetime column.png" height = "500" width = "450">
 
 Now the final table, combined_data, will look like this (this is only a small snippet of the table since there are millions of observations)
 
@@ -48,8 +48,10 @@ INSERT TABLE
 
 ---
 ## Heatmaps
-1.A heatmap showing the number of trips by hour and day:
+<p>1. A heatmap showing the number of trips by hour and day:
 <img src = "Images/heatmap by hour and day.png" height = "450" width = "450">
+</p>
+
 2. A heatmap showing the number of trips by month and day:
 <img src = "Images/heatmap of trips by month and day.png" height = "450" width = "450">
 3. A heatmap displaying the number fo trips by month and week:
