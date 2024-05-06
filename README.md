@@ -35,8 +35,6 @@ INSERT TABLE
 ---
 ## Data Analysis
 ### Pivot tables 
-<p>
-Created pivot tables for the following:
 1. A pivot table showing the number of trips during every hour from April to September:
   INSERT IMAGE
 2. A table showing the number of trips taken during each day of the month:
@@ -46,30 +44,27 @@ Created pivot tables for the following:
 4.A pivot table displaying the number of trips taken by bases and momth:
   INSERT IMAGE
 
-</p>
-
 ---
-
-### Heatmaps
-<p>
-Created heatmaps for the following:
+## Heatmaps
 1.A heatmap showing the number of trips by hour and day:
-  INSERT IMAGE
+<img src = "Images/heatmap by hour and day.png" width = 450>
 2. A heatmap showing the number of trips by month and day:
-  INSERT IMAGE
+<img src = "Images/heatmap of trips by month and day.png" width = 450>
 3. A heatmap displaying the number fo trips by month and week:
-  INSERT IMAGE
+<img src = "Images/heatmap of trips by month and week.png" width = 450>
 4. A heatmap dispalying the number of trips by bases and day of the week:
-  INSERT IMAGE
-</p>
-
-### Saving Plots to RDS files
-<p>
-  For all the plots constructed, I saved it into a RDS file so it can be read in the ShinyApp project. Below are examples of the RDS files saved of charts:
-  INSERT IMAGE
-  INSERT IMAGE
-  INSERT IMAGE
-</p>
+<img src = "Images/heatmap of trips by bases and weekday.png" width = 450>
+## Saving Plots to RDS files
+For all the plots constructed, includinh heatmaps, I saved it into a RDS file so it can be read in the ShinyApp project. Below are examples of the RDS files saved of charts:
+<img src = "Images/rds file of daily trips graph.png" width = 450>
+<img src = "Images/rds file of hourly trips graph.png" width = 450>
+<img src = "Images/rds file of trips by bases and month graph.png" width = 450>
+<img src = "Images/rds file of trips by hour and month graph.png" width = 450>
+<img src = "Images/rds file of trips by weekday and month graph.png" width = 450>
+<img src = "Images/rds file of heatmap bases and weekday.png" width = 450>
+<img src = "Images/rds file of heatmap by hour nd day.png" width = 450>
+<img src = "Images/rds file of heatmap by month and day.png" width = 450>
+<img src = "Images/rds file of heatmap by month and week.png" width = 450>
 
 ---
 ## ShinyApp
