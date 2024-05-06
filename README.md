@@ -13,7 +13,7 @@ This project involved the analysis of Uber rides and included was ShinyApp for v
 1. Date/Time: date and time of the rides taken 
 2. Lat: the latitude of the ride
 3. Lon: the longetidue of the ride
-4. Base: the starting points or bases from which Uber trips originate
+4. Base: the starting points from which Uber trips originate
    
 ---
 
@@ -108,23 +108,45 @@ heatmap_of_trips_by_hour_day <- combined_data %>%
   arrange(Hour, match(Weekday, c("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday")))
  ```
 2. A heatmap showing the number of trips by month and day:
-<img src = "Images/heatmap of trips by month and day.png" height = "115" width = "600">
-3. A heatmap displaying the number fo trips by month and week:
-<img src = "Images/heatmap of trips by month and week.png" height = "115" width = "600">
+```
+heatmap_by_month_day <- combined_data %>%
+  group_by(Month, Day) %>%
+  summarise(Trips = n()) %>%
+  arrange(match(Month, month.name), Day)
+```
+3. A heatmap displaying the number for trips by month and week:
+```
+heatmap_by_month_week <- combined_data %>%
+  mutate(
+    Week = week(`Date/Time`),
+    Month = factor(month.abb[month(`Date/Time`)], levels = month.abb)
+  ) %>%
+  group_by(Month, Week) %>%
+  summarise(Trips = n()) %>%
+  arrange(Week, Month)
+```
 4. A heatmap dispalying the number of trips by bases and day of the week:
-<img src = "Images/heatmap of trips by bases and weekday.png" height = "115" width = "600">
-
+```
+heatmap_by_bases_day <- combined_data %>%
+  group_by(Base, Weekday) %>%
+  summarise(Trips = n()) %>%
+  arrange(Base, match(Weekday, c("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday")))
+```
 ---
 
 ## Saving Plots to RDS files
 For all the plots constructed, includinh heatmaps, I saved it into a RDS file so it can be read in the ShinyApp project. Below are examples of the RDS files saved of charts (there are more plots saved as rds files, this is a snippet):
-<div align = "center">
-<img src = "Images/rds file of daily trips graph.png" width = 500>
-<img src = "Images/rds file of hourly trips graph.png" width = 500>
-<img src = "Images/rds file of trips by bases and month graph.png" width = 500>
-<img src = "Images/rds file of trips by hour and month graph.png" width = 500>
-</div>
-
+```
+saveRDS(trips_by_hour_month, file = "Trips by Hour and Month.rds")
+saveRDS(trips_by_every_hour, file = "Trips by every Hour.rds")
+saveRDS(daily_trips, file = "Daily Trips.rds")
+saveRDS(trips_by_weekday_and_month, file = "Trips by Weekday and Month.rds")
+saveRDS(trips_by_bases_month, file = "Trips by Bases and Month.rds")
+saveRDS(heatmap_of_trips_by_hour_day, file = "Heatmap of Trips by Hour and Day.rds")
+saveRDS(heatmap_by_month_day, file = "Heatmap of Trips by Month and Day.rds")
+saveRDS(heatmap_by_month_week, file = "Heatmap of Trips by Month and Week.rds")
+saveRDS(heatmap_by_bases_day, file = "Heatmap of Trips by Bases and Day.rds")
+```
 ---
 
 ## ShinyApp
