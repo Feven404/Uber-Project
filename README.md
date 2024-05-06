@@ -28,7 +28,7 @@ Combined all the data and made the following changes regarding the Date/Time col
 4. Created a new column extracting only the weekdays from the Date/Time column and displaying it as words like Monday, Tuesday, etc.
 5. Created a new column extracting only the day in numeric value from the Date/Time column
 
-<img src="Images/changing the datetime column.png" height = "250" width = "450">
+<img src="Images/changing the datetime column.png" height = "100" width = "450">
 
 Now the final table, combined_data, will look like this (this is only a small snippet of the table since there are millions of observations)
 
@@ -63,19 +63,12 @@ INSERT TABLE
 ---
 
 ## Saving Plots to RDS files
-For all the plots constructed, includinh heatmaps, I saved it into a RDS file so it can be read in the ShinyApp project. Below are examples of the RDS files saved of charts:
+For all the plots constructed, includinh heatmaps, I saved it into a RDS file so it can be read in the ShinyApp project. Below are examples of the RDS files saved of charts (there are more plots saved as rds files, this is a snippet):
 <div align = "center">
 <img src = "Images/rds file of daily trips graph.png" width = 500>
 <img src = "Images/rds file of hourly trips graph.png" width = 500>
 <img src = "Images/rds file of trips by bases and month graph.png" width = 500>
 <img src = "Images/rds file of trips by hour and month graph.png" width = 500>
-</div>
-<div align = "center">
-<img src = "Images/rds file of trips by weekday and month graph.png" width = 500>
-<img src = "Images/rds file of heatmap bases and weekday.png" width = 500>
-<img src = "Images/rds file of heatmap by hour nd day.png" width = 500>
-<img src = "Images/rds file of heatmap by month and day.png" width = 500>
-<img src = "Images/rds file of heatmap by month and week.png" width = 500>
 </div>
 
 ---
