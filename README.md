@@ -56,6 +56,7 @@ INSERT TABLE
 <img src = "Images/heatmap of trips by bases and weekday.png" width = 450>
 ## Saving Plots to RDS files
 For all the plots constructed, includinh heatmaps, I saved it into a RDS file so it can be read in the ShinyApp project. Below are examples of the RDS files saved of charts:
+<div align = "center">
 <img src = "Images/rds file of daily trips graph.png" width = 450>
 <img src = "Images/rds file of hourly trips graph.png" width = 450>
 <img src = "Images/rds file of trips by bases and month graph.png" width = 450>
@@ -65,7 +66,7 @@ For all the plots constructed, includinh heatmaps, I saved it into a RDS file so
 <img src = "Images/rds file of heatmap by hour nd day.png" width = 450>
 <img src = "Images/rds file of heatmap by month and day.png" width = 450>
 <img src = "Images/rds file of heatmap by month and week.png" width = 450>
-
+</div>
 ---
 ## ShinyApp
 <p>
