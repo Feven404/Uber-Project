@@ -1,4 +1,11 @@
-# Uber-Project
+# Uber Project
+## Feven Ferede
+---
+## Introduction
+This project involved the analysis of Uber rides and included was ShinyApp for visualisation.
+<div align = "center">
+<img src = "Images/uber photo.webp" width = "450")>
+</div>
 ---
 ##Data Dictionary
 <p>
@@ -8,29 +15,25 @@
   4. Base
 </p>
 ---
-##Data Cleaning
-<p>
-  Changed the csv files to RDSS
-  INSERT IMAGE
+## Data Cleaning
+Changed the csv files to RDS
+<img src="Images/csv to rds.png", height = 500, width = 450>
 
-  Combined all the data and made the following changes regarding the Date/Time column:
-  1. Changed the data format under the Date/Time column to mm-dd-yyyy hh:mm:ss
-  2. Created a new column extracting only the hour from the Date/Time column
-  3. Created a new column extracting only the month from the Date/Time column and changing it from numeric to words like 09 would be displayed as September.
-  4. Created a new column extracting only the weekdays from the Date/Time column and displaying it as words like Monday, Tuesday, etc.
-  5. Created a new column extracting only the day in numeric value from the Date/Time column
+Combined all the data and made the following changes regarding the Date/Time column:
+1. Changed the data format under the Date/Time column to mm-dd-yyyy hh:mm:ss
+2. Created a new column extracting only the hour from the Date/Time column
+3. Created a new column extracting only the month from the Date/Time column and changing it from numeric to words like 09 would be displayed as September.
+4. Created a new column extracting only the weekdays from the Date/Time column and displaying it as words like Monday, Tuesday, etc.
+5. Created a new column extracting only the day in numeric value from the Date/Time column
 
-INSERT IMAGE
+<img src="Images/changing the datetime column.png", height = 500, width = 450>
 
 Now the final table, combined_data, will look like this (this is only a small snippet of the table since there are millions of observations)
 
 INSERT TABLE
 
-</p>
-
 ---
-
-##Data Analysis
+## Data Analysis
 ### Pivot tables 
 <p>
 Created pivot tables for the following:
