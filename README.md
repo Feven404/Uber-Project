@@ -7,13 +7,11 @@ This project involved the analysis of Uber rides and included was ShinyApp for v
 <img src = "Images/uber photo.webp" width = "450")>
 </div>
 ---
-##Data Dictionary
-<p>
-  1. Date/Time:
-  2. Lat:
-  3. Lon:
-  4. Base
-</p>
+## Data Dictionary
+1. Date/Time: date and time of the rides taken 
+2. Lat: the latitude of the ride
+3. Lon: the longetidue of the ride
+4. Base: the starting points or bases from which Uber trips originate
 ---
 ## Data Cleaning
 Changed the csv files to RDS
