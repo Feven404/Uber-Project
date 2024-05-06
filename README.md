@@ -32,7 +32,7 @@ Combined all the data and made the following changes regarding the Date/Time col
 
 Now the final table, combined_data, will look like this (this is only a small snippet of the table since there are millions of observations)
 
-<img src="Images/combined data sample image.png" height = "400" width = "550">
+<img src="Images/combined data sample image.png" height = "400" width = "750">
 
 ---
 ## Data Analysis
