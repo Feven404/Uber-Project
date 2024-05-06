@@ -32,19 +32,19 @@ Combined all the data and made the following changes regarding the Date/Time col
 
 Now the final table, combined_data, will look like this (this is only a small snippet of the table since there are millions of observations)
 
-INSERT TABLE
+<img src="Images/combined data sample image.png" height = "400" width = "475">
 
 ---
 ## Data Analysis
 ### Pivot tables 
 1. A pivot table showing the number of trips during every hour from April to September:
-  INSERT IMAGE
+<img src = "Images/pivot table shows trips by the hour.png" height = "115" width = "600">
 2. A table showing the number of trips taken during each day of the month:
-  INSERT IMAGE
-3. A pivot table showing the number of trips taken by weekdy and month:
-  INSERT IMAGE
-4.A pivot table displaying the number of trips taken by bases and momth:
-  INSERT IMAGE
+<img src = "Images/daily trips table.png" height = "115" width = "600">
+4. A pivot table showing the number of trips taken by weekday and month:
+<img src = "Images/pivot table shows trips by weekday and month.png" height = "115" width = "600">
+5. A pivot table displaying the number of trips taken by bases and month:
+<img src = "Images/pivot table trips by bases and month.png" height = "115" width = "600">
 
 ---
 
