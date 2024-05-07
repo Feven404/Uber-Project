@@ -152,7 +152,7 @@ saveRDS(heatmap_by_bases_day, file = "Heatmap of Trips by Bases and Day.rds")
 ## ShinyApp
 <p>
   Created a ShinyApp which is accessible using the following link:
-  [https://fevenf.shinyapps.io/UberAssignment/]
+  [https://fevenf.shinyapps.io/UberProjecrRideAnalysis/]
 </p>
 
 
